@@ -1,0 +1,451 @@
+user_id,direction,date_activation
+U0001,RH,
+U0002,Banque de détail,2026-06-22
+U0003,Banque de détail,2026-06-29
+U0004,Opérations,
+U0005,Banque de détail,2026-06-08
+U0006,RH,2026-06-08
+U0007,Banque de détail,2026-06-15
+U0008,Conformité,2026-06-15
+U0009,Banque de détail,2026-06-01
+U0010,Marketing,
+U0011,Banque de détail,2026-06-15
+U0012,Banque de détail,2026-06-08
+U0013,Banque de détail,2026-06-29
+U0014,Finance,
+U0015,Marketing,
+U0016,Banque de détail,2026-06-22
+U0017,Finance,2026-07-20
+U0018,Banque de détail,
+U0019,Banque de détail,2026-06-22
+U0020,RH,
+U0021,Marketing,2026-07-20
+U0022,Marketing,2026-06-08
+U0023,RH,2026-06-15
+U0024,Opérations,2026-07-06
+U0025,Banque de détail,
+U0026,RH,2026-06-08
+U0027,Marketing,2026-06-15
+U0028,Banque de détail,2026-09-07
+U0029,Conformité,2026-06-22
+U0030,Opérations,2026-06-29
+U0031,Finance,2026-06-08
+U0032,Banque de détail,2026-06-01
+U0033,RH,2026-08-24
+U0034,Finance,
+U0035,Banque de détail,2026-07-27
+U0036,Banque de détail,
+U0037,RH,2026-06-22
+U0038,RH,2026-07-20
+U0039,Conformité,2026-08-03
+U0040,Marketing,2026-09-07
+U0041,Banque de détail,
+U0042,Conformité,2026-08-03
+U0043,Banque de détail,2026-09-28
+U0044,RH,2026-09-28
+U0045,Banque de détail,2026-06-29
+U0046,Banque de détail,2026-06-22
+U0047,Banque de détail,2026-06-29
+U0048,RH,2026-06-15
+U0049,Banque de détail,2026-08-24
+U0050,Banque de détail,2026-06-08
+U0051,Banque de détail,2026-07-06
+U0052,Conformité,2026-06-15
+U0053,RH,2026-07-27
+U0054,Opérations,2026-09-07
+U0055,Banque de détail,
+U0056,RH,2026-06-15
+U0057,Conformité,2026-06-22
+U0058,Finance,2026-07-06
+U0059,Conformité,
+U0060,Banque de détail,2026-06-22
+U0061,RH,2026-08-24
+U0062,Banque de détail,2026-06-01
+U0063,Marketing,2026-06-01
+U0064,RH,2026-06-08
+U0065,Banque de détail,2026-08-31
+U0066,Banque de détail,2026-10-05
+U0067,RH,2026-07-06
+U0068,RH,2026-06-01
+U0069,RH,2026-07-06
+U0070,Banque de détail,
+U0071,Marketing,2026-08-03
+U0072,Opérations,2026-06-08
+U0073,Finance,2026-07-20
+U0074,Finance,
+U0075,Banque de détail,2026-09-07
+U0076,Conformité,
+U0077,Marketing,2026-08-03
+U0078,Banque de détail,2026-06-01
+U0079,Banque de détail,2026-08-03
+U0080,Opérations,
+U0081,Banque de détail,2026-09-07
+U0082,Finance,2026-06-15
+U0083,Banque de détail,2026-08-24
+U0084,Finance,2026-06-08
+U0085,Marketing,2026-08-03
+U0086,Conformité,2026-07-27
+U0087,Conformité,2026-09-07
+U0088,Banque de détail,2026-10-12
+U0089,Banque de détail,2026-06-15
+U0090,Marketing,
+U0091,Banque de détail,
+U0092,Banque de détail,2026-07-06
+U0093,Opérations,2026-06-29
+U0094,Opérations,2026-06-15
+U0095,Banque de détail,2026-06-29
+U0096,Banque de détail,2026-06-01
+U0097,Marketing,2026-06-15
+U0098,Banque de détail,2026-06-29
+U0099,Finance,2026-07-27
+U0100,Conformité,2026-06-01
+U0101,Banque de détail,2026-06-01
+U0102,RH,2026-07-27
+U0103,Banque de détail,
+U0104,Marketing,2026-06-15
+U0105,Conformité,2026-06-15
+U0106,Conformité,2026-08-24
+U0107,Opérations,
+U0108,Finance,2026-10-12
+U0109,Banque de détail,
+U0110,Conformité,2026-08-31
+U0111,Conformité,2026-09-28
+U0112,Banque de détail,
+U0113,Conformité,
+U0114,Finance,2026-07-27
+U0115,Opérations,2026-06-15
+U0116,Banque de détail,2026-06-22
+U0117,RH,
+U0118,Conformité,
+U0119,Opérations,2026-07-27
+U0120,Opérations,2026-07-27
+U0121,Banque de détail,2026-06-22
+U0122,Conformité,
+U0123,Finance,2026-06-22
+U0124,Banque de détail,2026-09-07
+U0125,Banque de détail,2026-06-15
+U0126,Conformité,2026-08-24
+U0127,Finance,2026-07-06
+U0128,Banque de détail,2026-07-20
+U0129,Marketing,2026-06-15
+U0130,Finance,
+U0131,RH,
+U0132,Conformité,2026-06-01
+U0133,Banque de détail,2026-06-01
+U0134,RH,
+U0135,Banque de détail,2026-10-05
+U0136,Opérations,
+U0137,Banque de détail,
+U0138,Finance,2026-06-15
+U0139,Conformité,2026-07-06
+U0140,Banque de détail,2026-08-24
+U0141,Opérations,2026-06-29
+U0142,Marketing,2026-06-01
+U0143,RH,2026-08-03
+U0144,Marketing,2026-06-08
+U0145,Banque de détail,
+U0146,Opérations,2026-08-31
+U0147,RH,2026-07-27
+U0148,Banque de détail,
+U0149,RH,2026-07-06
+U0150,RH,
+U0151,Finance,2026-06-15
+U0152,Marketing,
+U0153,Opérations,2026-06-08
+U0154,Finance,2026-08-31
+U0155,RH,2026-08-24
+U0156,Finance,
+U0157,Opérations,
+U0158,Finance,2026-08-24
+U0159,Banque de détail,2026-08-03
+U0160,Finance,2026-07-20
+U0161,Banque de détail,2026-06-29
+U0162,Banque de détail,2026-06-15
+U0163,Conformité,
+U0164,RH,2026-06-08
+U0165,Conformité,
+U0166,Banque de détail,2026-06-08
+U0167,Banque de détail,2026-10-05
+U0168,RH,2026-09-28
+U0169,Banque de détail,
+U0170,Banque de détail,2026-09-28
+U0171,Banque de détail,2026-06-29
+U0172,Opérations,2026-08-31
+U0173,Conformité,2026-06-08
+U0174,Banque de détail,2026-07-06
+U0175,Banque de détail,
+U0176,Opérations,2026-06-08
+U0177,Opérations,2026-08-03
+U0178,Opérations,2026-08-24
+U0179,Banque de détail,
+U0180,RH,
+U0181,Banque de détail,2026-08-31
+U0182,Finance,2026-10-05
+U0183,Banque de détail,2026-07-27
+U0184,Banque de détail,2026-06-01
+U0185,RH,2026-06-29
+U0186,Marketing,2026-08-24
+U0187,Banque de détail,
+U0188,Finance,
+U0189,RH,2026-06-08
+U0190,Finance,2026-06-22
+U0191,Banque de détail,
+U0192,Banque de détail,2026-08-31
+U0193,RH,
+U0194,Banque de détail,2026-06-08
+U0195,Conformité,
+U0196,Banque de détail,
+U0197,Banque de détail,2026-08-24
+U0198,Conformité,
+U0199,Banque de détail,2026-06-08
+U0200,Banque de détail,2026-06-08
+U0201,Marketing,2026-06-08
+U0202,Marketing,
+U0203,Finance,
+U0204,Banque de détail,2026-06-15
+U0205,Marketing,2026-06-22
+U0206,Banque de détail,2026-08-24
+U0207,Conformité,2026-06-08
+U0208,Banque de détail,
+U0209,Banque de détail,
+U0210,Marketing,2026-06-29
+U0211,Conformité,2026-06-15
+U0212,Opérations,2026-07-27
+U0213,Banque de détail,2026-06-22
+U0214,Marketing,
+U0215,Banque de détail,2026-06-29
+U0216,Conformité,2026-07-27
+U0217,Marketing,2026-08-03
+U0218,RH,2026-06-01
+U0219,Conformité,2026-07-20
+U0220,Banque de détail,2026-07-06
+U0221,Banque de détail,2026-06-08
+U0222,Marketing,2026-06-01
+U0223,Conformité,2026-10-05
+U0224,Conformité,
+U0225,Opérations,2026-06-01
+U0226,Banque de détail,
+U0227,RH,2026-07-06
+U0228,Conformité,2026-06-08
+U0229,Opérations,2026-07-20
+U0230,RH,
+U0231,Banque de détail,2026-07-20
+U0232,Banque de détail,
+U0233,Conformité,2026-08-24
+U0234,RH,2026-06-15
+U0235,RH,2026-06-22
+U0236,Banque de détail,2026-07-20
+U0237,Banque de détail,2026-09-28
+U0238,Opérations,
+U0239,Marketing,2026-06-22
+U0240,Banque de détail,2026-09-07
+U0241,Opérations,2026-06-08
+U0242,Banque de détail,2026-07-20
+U0243,Banque de détail,
+U0244,Banque de détail,2026-10-05
+U0245,Opérations,2026-06-15
+U0246,Conformité,
+U0247,Banque de détail,
+U0248,Finance,
+U0249,Marketing,
+U0250,Banque de détail,2026-06-22
+U0251,Marketing,2026-06-08
+U0252,Banque de détail,
+U0253,Banque de détail,
+U0254,Conformité,2026-09-07
+U0255,Opérations,2026-07-27
+U0256,Banque de détail,2026-06-22
+U0257,Marketing,
+U0258,Opérations,2026-07-20
+U0259,RH,2026-06-22
+U0260,Banque de détail,2026-06-08
+U0261,Opérations,
+U0262,RH,2026-10-05
+U0263,Banque de détail,2026-07-27
+U0264,Banque de détail,2026-07-27
+U0265,RH,2026-06-29
+U0266,Banque de détail,2026-06-08
+U0267,Conformité,
+U0268,Banque de détail,2026-08-24
+U0269,Banque de détail,
+U0270,Marketing,2026-06-08
+U0271,RH,2026-06-15
+U0272,RH,2026-08-03
+U0273,Conformité,2026-06-22
+U0274,Finance,2026-08-31
+U0275,Banque de détail,2026-09-07
+U0276,Marketing,2026-06-08
+U0277,Banque de détail,
+U0278,Conformité,
+U0279,Conformité,
+U0280,Marketing,2026-06-01
+U0281,RH,2026-06-01
+U0282,Marketing,
+U0283,Marketing,2026-10-05
+U0284,Marketing,2026-06-08
+U0285,Finance,2026-07-06
+U0286,Conformité,
+U0287,RH,
+U0288,Banque de détail,
+U0289,Finance,2026-06-15
+U0290,Banque de détail,2026-08-03
+U0291,Finance,2026-10-12
+U0292,Banque de détail,2026-06-15
+U0293,Banque de détail,2026-09-07
+U0294,Banque de détail,2026-07-06
+U0295,Banque de détail,2026-06-08
+U0296,Conformité,2026-06-01
+U0297,RH,2026-06-22
+U0298,Banque de détail,2026-07-27
+U0299,Marketing,
+U0300,Marketing,
+U0301,Marketing,2026-06-29
+U0302,Finance,2026-08-24
+U0303,Banque de détail,2026-08-31
+U0304,RH,2026-06-22
+U0305,Finance,
+U0306,Banque de détail,2026-06-15
+U0307,Conformité,
+U0308,Opérations,2026-08-31
+U0309,Banque de détail,2026-06-08
+U0310,Finance,
+U0311,Conformité,
+U0312,Finance,2026-09-28
+U0313,Banque de détail,2026-06-01
+U0314,Finance,2026-06-29
+U0315,Finance,2026-08-03
+U0316,Opérations,2026-07-27
+U0317,Marketing,2026-07-20
+U0318,RH,2026-08-03
+U0319,RH,
+U0320,RH,2026-06-01
+U0321,Conformité,2026-08-31
+U0322,RH,
+U0323,RH,
+U0324,RH,2026-06-15
+U0325,RH,2026-06-15
+U0326,Banque de détail,2026-06-29
+U0327,RH,2026-06-15
+U0328,Opérations,2026-07-06
+U0329,Marketing,
+U0330,RH,2026-06-15
+U0331,Banque de détail,2026-08-03
+U0332,Banque de détail,
+U0333,Opérations,
+U0334,Banque de détail,2026-06-15
+U0335,Finance,2026-09-28
+U0336,Finance,2026-06-22
+U0337,Finance,
+U0338,RH,
+U0339,Marketing,2026-08-03
+U0340,Banque de détail,2026-10-12
+U0341,Banque de détail,
+U0342,Banque de détail,2026-06-08
+U0343,Conformité,2026-10-12
+U0344,RH,
+U0345,RH,2026-06-15
+U0346,Finance,2026-08-03
+U0347,Finance,
+U0348,Conformité,2026-06-29
+U0349,Conformité,2026-06-15
+U0350,Conformité,2026-06-01
+U0351,Finance,
+U0352,Conformité,2026-06-01
+U0353,Opérations,2026-08-03
+U0354,Banque de détail,2026-07-06
+U0355,Finance,2026-06-22
+U0356,Conformité,
+U0357,RH,2026-10-05
+U0358,Finance,
+U0359,Marketing,2026-07-20
+U0360,Banque de détail,
+U0361,Finance,
+U0362,Banque de détail,
+U0363,RH,
+U0364,Banque de détail,2026-10-12
+U0365,Marketing,2026-09-28
+U0366,Banque de détail,2026-07-20
+U0367,Marketing,2026-06-15
+U0368,Banque de détail,2026-06-01
+U0369,Marketing,2026-06-15
+U0370,Banque de détail,2026-06-15
+U0371,Conformité,2026-06-08
+U0372,Marketing,2026-06-01
+U0373,Conformité,
+U0374,Opérations,2026-06-15
+U0375,Marketing,2026-06-29
+U0376,Finance,2026-10-12
+U0377,Banque de détail,
+U0378,Finance,2026-09-28
+U0379,RH,
+U0380,Finance,2026-08-24
+U0381,Opérations,2026-06-01
+U0382,Banque de détail,
+U0383,Opérations,2026-09-07
+U0384,Banque de détail,
+U0385,Opérations,
+U0386,Opérations,
+U0387,Finance,2026-07-27
+U0388,Banque de détail,
+U0389,Banque de détail,
+U0390,Finance,2026-06-08
+U0391,Banque de détail,2026-07-27
+U0392,Banque de détail,
+U0393,Finance,
+U0394,Banque de détail,
+U0395,Marketing,
+U0396,RH,2026-06-29
+U0397,Banque de détail,
+U0398,Conformité,2026-06-08
+U0399,Marketing,
+U0400,RH,2026-06-01
+U0401,Marketing,2026-06-22
+U0402,Finance,
+U0403,Marketing,2026-06-01
+U0404,Conformité,2026-06-15
+U0405,Conformité,2026-06-29
+U0406,Marketing,2026-07-27
+U0407,Opérations,2026-06-15
+U0408,Marketing,
+U0409,RH,2026-06-08
+U0410,Opérations,2026-06-08
+U0411,Banque de détail,2026-07-06
+U0412,Banque de détail,
+U0413,Banque de détail,
+U0414,Conformité,
+U0415,Banque de détail,2026-09-28
+U0416,Finance,
+U0417,Banque de détail,2026-07-06
+U0418,Banque de détail,
+U0419,Opérations,2026-09-07
+U0420,Opérations,2026-06-01
+U0421,Banque de détail,2026-06-15
+U0422,Banque de détail,
+U0423,RH,2026-06-22
+U0424,Banque de détail,2026-07-27
+U0425,Opérations,2026-09-07
+U0426,Banque de détail,2026-07-06
+U0427,RH,2026-06-08
+U0428,Finance,2026-06-08
+U0429,Finance,2026-06-15
+U0430,Banque de détail,2026-07-20
+U0431,Banque de détail,2026-06-08
+U0432,Marketing,
+U0433,Conformité,2026-06-01
+U0434,Opérations,
+U0435,Opérations,2026-06-08
+U0436,Banque de détail,2026-07-06
+U0437,Conformité,
+U0438,Banque de détail,2026-06-29
+U0439,RH,2026-07-20
+U0440,Banque de détail,
+U0441,Banque de détail,2026-06-15
+U0442,Conformité,
+U0443,Banque de détail,2026-06-15
+U0444,RH,
+U0445,Banque de détail,2026-10-05
+U0446,Marketing,2026-08-31
+U0447,Banque de détail,2026-09-28
+U0448,Opérations,2026-07-27
+U0449,Marketing,2026-06-15
+U0450,Finance,2026-08-03
