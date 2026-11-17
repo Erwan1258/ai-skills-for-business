@@ -4,3 +4,7 @@ __pycache__/
 .DS_Store
 .streamlit/secrets.toml
 feedback.csv
+.env
+cadrages/
+skills_proposes/
+.pytest_cache/

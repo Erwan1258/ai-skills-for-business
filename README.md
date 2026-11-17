@@ -1,27 +1,92 @@
 # 🧠 AI Skills for Business
 
-> Une boîte à outils pour **déployer l'IA générative auprès de collaborateurs non-développeurs** : des skills prêts à l'emploi, les fiches besoin qui les justifient, des supports de formation et un tableau de bord pour suivre l'adoption.
+> Une boîte à outils pour **déployer l'IA générative auprès de collaborateurs non-développeurs** : un agent IA qui cadre les besoins métier, des skills prêts à l'emploi, des supports de formation et un tableau de bord pour suivre l'adoption.
 
 Ce projet couvre tout le cycle d'adoption de l'IA dans une organisation, et pas seulement l'aspect technique :
 
 ```
  Besoin métier  ──►  Skill IA  ──►  Formation  ──►  Adoption  ──►  Retours d'expérience
-  (fiche besoin)    (SKILL.md)    (tutos, atelier)   (dashboard)     (bonnes pratiques)
+ (agent cadrage)    (SKILL.md)    (tutos, atelier)   (dashboard)     (bonnes pratiques)
         ▲                                                                   │
         └───────────────────────────── amélioration continue ◄─────────────┘
 ```
 
 ---
 
+## 🚀 Démarrage rapide
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate          # Windows : .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env               # puis ajoutez une clé gratuite (voir plus bas)
+streamlit run dashboard/app.py
+```
+
+L'application s'ouvre sur `http://localhost:8501`, avec deux pages : le **tableau de bord d'adoption** et l'**agent de cadrage**.
+
 ## 📦 Contenu
 
 | Dossier | Rôle | Pour qui |
 |---|---|---|
+| [`agent/`](agent/) | **Agent de cadrage** (LangGraph) : interroge un collaborateur sur son besoin, le score, vérifie les skills existants et rédige la fiche de cadrage ou un nouveau skill | Utilisateurs métier, équipe IA |
 | [`skills/`](skills/) | 4 skills IA métier au format `SKILL.md`, chacun avec sa **fiche besoin** et des **exemples** entrée/sortie | Utilisateurs métier, équipe IA |
 | [`formation/`](formation/) | Tutoriel pas à pas pour non-développeurs, déroulé d'atelier de 45 min, FAQ | Formateurs, utilisateurs |
-| [`dashboard/`](dashboard/) | Tableau de bord **Streamlit** de suivi de l'adoption (utilisateurs actifs, usage par skill, satisfaction, temps gagné) | Équipe IA, management |
+| [`dashboard/`](dashboard/) | Application **Streamlit** : tableau de bord d'adoption + page de discussion avec l'agent | Équipe IA, management |
+| [`tests/`](tests/) | Tests automatisés de l'agent (outils + parcours complet avec un faux LLM) | — |
 | [`data/`](data/) | Jeu de données d'usage **fictif** + script de génération | — |
 | [`docs/`](docs/) | Guide de bonnes pratiques, démarche de cadrage d'un cas d'usage, modèle de retour d'expérience | Communauté d'utilisateurs |
+
+## 🤖 L'agent de cadrage
+
+Un collaborateur décrit une tâche pénible en langage courant. L'agent mène l'entretien comme un business analyst, puis décide.
+
+```
+        ┌──────────┐   appel d'outil ?   ┌─────────┐
+START ─►│  agent   │ ──────── oui ─────► │  tools  │
+        │  (LLM)   │ ◄────────────────── │         │
+        └──────────┘                     └─────────┘
+              │ non → réponse à l'utilisateur
+              ▼
+             END
+```
+
+| Outil | Rôle |
+|---|---|
+| `lister_skills` / `lire_skill` | Vérifie si un skill existant couvre déjà le besoin, avant d'en créer un nouveau |
+| `calculer_score` | Score de priorisation sur 20 (volume, gain de temps, faisabilité, risque) |
+| `enregistrer_fiche_cadrage` | Écrit la fiche de cadrage dans `cadrages/` |
+| `proposer_nouveau_skill` | Rédige un brouillon de `SKILL.md` dans `skills_proposes/`, pour relecture humaine |
+
+**Choix de conception**
+- **LangGraph** : graphe explicite agent ⇄ outils, mémoire de conversation par `thread_id` et limite d'étapes contre les boucles.
+- **Multi-fournisseur** : un seul client compatible OpenAI. On passe de Groq à Gemini, Mistral ou **Ollama en local** en changeant une ligne du `.env`. En local, les données ne quittent pas la machine.
+- **Garde-fous** : l'agent ne peut pas modifier les skills en production. Ses propositions vont dans un dossier séparé, à valider par l'équipe IA. Il lui est aussi interdit d'inventer les réponses de l'utilisateur ou de reprendre des données clients.
+- **Testable** : la logique des outils est séparée du LLM. Un faux modèle scripté permet de tester le parcours complet sans clé d'API.
+
+### Configurer un modèle gratuit
+
+```bash
+cp .env.example .env
+```
+
+Puis, dans `.env`, choisissez **un** fournisseur :
+
+| Fournisseur | `LLM_PROVIDER` | Clé gratuite |
+|---|---|---|
+| Groq (rapide) | `groq` | [console.groq.com/keys](https://console.groq.com/keys) |
+| Google Gemini | `gemini` | [aistudio.google.com/apikey](https://aistudio.google.com/apikey) |
+| Mistral (hébergé en France) | `mistral` | [console.mistral.ai](https://console.mistral.ai/api-keys) |
+| Ollama (100 % local) | `ollama` | Aucune : `ollama pull qwen2.5:7b` |
+
+### Lancer l'agent
+
+```bash
+streamlit run dashboard/app.py     # page « 💬 Agent de cadrage » dans le menu de gauche
+python data/generate_usage.py      # (facultatif) régénérer les données de démo
+python -m agent                    # ou directement dans le terminal
+pytest                             # lancer les tests
+```
 
 ## 🛠️ Les skills
 
@@ -43,24 +108,9 @@ skills/<nom-du-skill>/
 
 > **Pourquoi le format `SKILL.md` ?** C'est un format ouvert (un fichier Markdown avec un en-tête `name` / `description`) utilisé par les assistants IA à base d'agents comme Claude. Le même contenu peut aussi être collé tel quel comme « instructions » dans un GPT personnalisé, un Copilot agent ou un assistant interne. **Le skill est indépendant de l'outil.**
 
-## 🚀 Lancer le tableau de bord d'adoption
+## 📈 Le tableau de bord d'adoption
 
-```bash
-# 1. Créer un environnement virtuel
-python3 -m venv .venv
-source .venv/bin/activate        # Windows : .venv\Scripts\activate
-
-# 2. Installer les dépendances
-pip install -r requirements.txt
-
-# 3. (Optionnel) Régénérer les données fictives
-python data/generate_usage.py
-
-# 4. Lancer le dashboard
-streamlit run dashboard/app.py
-```
-
-Le dashboard s'ouvre sur `http://localhost:8501` :
+Lancé avec `streamlit run dashboard/app.py` (page d'accueil, sur `http://localhost:8501`) :
 
 - **KPI** : utilisateurs actifs, nombre d'utilisations, satisfaction moyenne, heures gagnées
 - **Courbe d'adoption** hebdomadaire
@@ -94,7 +144,7 @@ En entreprise, ces données proviennent de l'**export d'usage de l'outil IA** (c
 
 ## 🧭 Méthode
 
-1. **Identifier le besoin** avec les métiers → [`docs/cadrage-cas-usage.md`](docs/cadrage-cas-usage.md)
+1. **Identifier le besoin** avec les métiers → l'agent de cadrage, ou la [fiche manuelle](docs/cadrage-cas-usage.md)
 2. **Concevoir le skill** et le tester sur des cas réels → `skills/*/SKILL.md`
 3. **Former** et accompagner → `formation/`
 4. **Mesurer l'adoption** → `dashboard/`
